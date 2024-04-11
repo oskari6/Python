@@ -1,10 +1,10 @@
-import requests
+from flask import request
 
 payloadurl = "discord api here, where you send everything" 
 
 while True:
     message = input()
-    r = requests.post(url, data={"content":message})
+    r = request.post(url, data={"content":message})
 
 #online money transfer checking function
 def get_balance(address):
